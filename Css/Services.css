@@ -1,0 +1,217 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+:root {
+    --color-1: #E9DCB9;
+    --color-2: #BB772E;
+    --color-3: #817D62;
+    --color-4: #2E3F53;
+    --reef-gold: #9e7422;
+    --black: #040404;
+    --mercury: #e3e3e3;
+    --dallas: #604a22;
+    --boulder: #7c7c7c;
+    --brown-tumbleweed: #2d1c0b;
+    --tuatara: #3c3c3b;
+    --mine-shaft: #343434;
+  }
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Rubik', sans-serif;
+}
+/* Styling for the Page Title Section */
+.container-ss {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the color and opacity as needed */
+    z-index: 1;
+}
+.container-s {
+    background-image: url('https://res.cloudinary.com/dh1lgpmm4/image/upload/v1690065499/O3img/Car_uvcfop.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    padding: 120px 0;
+    height: 50vh;
+  }
+  
+
+  .page-title {
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+  }
+     
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .container-s {
+        padding:0%;}
+
+    .page-title {
+      padding: 5%;
+    }
+  
+    .page-title h1 {
+      font-size: 28px;
+    }
+  
+    .page-title p {
+      font-size: 16px;
+    }
+  }
+  
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .services h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--color-4);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .service {
+    width: calc(33.33% - 20px);
+    background-color: var(--color-1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service i {
+    color: var(--color-2);
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .ion-key {
+    transform: rotate(-90deg);
+    transition: transform 0.1s ease-in-out; /* Add a smooth transition effect */
+  }
+  .service h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color-4);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .service p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--color-4);
+    text-align: center;
+  }
+
+/* Styling for the "Why Choose Us?" Section */
+.why-choose-us {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+  }
+  
+  .why-choose-us h1 {
+    font-size: 36px;
+    color: var(--color-4);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .reasons-list {
+    list-style-type:disc;
+    color: var(--color-4); 
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+    font-size: 18px;
+    margin-left: 40px;
+  }
+  
+  .reasons-list li {
+    margin-bottom: 10px; 
+    color: var(--color-4); 
+
+  }
+  .reasons-list strong {
+    color: var(--color-2);
+    font-weight: bold;
+    width: 200px;
+  }
+   
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .reasons-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .reasons-list li::before {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+ /* Styling for the Call to Action (CTA) Section */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    color: var(--color-4); 
+    text-align: center;
+  }
+  
+  .cta-section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+  }
+  
+  .btn-default a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-2);
+    color: var(--color-1); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-default a:hover {
+    background-color: var(--color-3); 
+  }
+  

@@ -1,0 +1,126 @@
+:root {
+    --color-1: #E9DCB9;
+    --color-2: #BB772E;
+    --color-3: #817D62;
+    --color-4: #2E3F53;
+    --reef-gold: #9e7422;
+    --black: #040404;
+    --mercury: #e3e3e3;
+    --dallas: #604a22;
+    --boulder: #7c7c7c;
+    --brown-tumbleweed: #2d1c0b;
+    --tuatara: #3c3c3b;
+    --mine-shaft: #343434;
+  }
+
+/* Style the logo image */
+.logo img {
+    width: 100px;
+    height: auto
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--black);
+  }
+  
+  /* Style the menu icon */
+  .menu-icon {
+    display: none;
+    color: var(--color-1);
+    font-size: 24px;
+    border-radius: 60px;
+  }
+  
+  /* Style the navigation links */
+  .navigation {
+    list-style-type: none;
+  }
+  
+  .navigation li {
+    display: inline-block;
+  }
+  
+  .navigation li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--mercury);
+    text-decoration: none;
+    border-radius: 60px;
+  }
+  
+  .navigation li a:hover {
+    background-color: var(--color-3);
+  }
+  
+/* Footer Styles */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left a {
+  color: #BB772E;
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 2px;
+}
+
+.footer-content {
+  font-weight: 600;
+  font-size: 14px;
+  color: #BB772E;
+  padding: 5px 20px;
+  margin-left: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a,
+.iconsinfooter {
+  color: #343434;
+  text-decoration: none;
+  font-size: .8rem;
+  margin-right: .5rem;
+}
+
+.social-icons i {
+  font-size: .8rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footer-content {
+      font-size: 12px;
+  }
+  
+  .footer-left a {
+      font-size: 18px;
+  }
+  
+  .contact-info p,
+  .social-icons a,
+  .iconsinfooter {
+      font-size: 10px;
+  }
+  
+  .social-icons i {
+      font-size: 12px;
+  }
+}
